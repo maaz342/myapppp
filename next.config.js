@@ -1,11 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images:{
-        remotePatterns:[{hostname:"images.unsplash.com"}]
-    },
-    experimental:{
-        serverActions:true
-    }
-}
+    images: {
+      remotePatterns: [
+        { hostname: "images.unsplash.com" } ,
+        { hostname: "encrypted-tbn0.gstatic.com"},
+        {hostname:"unsplash.com" }
 
-module.exports = nextConfig
+      ]
+    },
+ experimental:{
+    serverActions:true,
+ },
+}
+  
+  module.exports = nextConfig;
+  
